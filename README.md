@@ -2,6 +2,8 @@
 
 This is a simple MEAN blog app with user authentication. 
 
-Front-End: Angular 4, Bootstrap
+# Front-End: 
+Angular 4, Bootstrap
 
-Back-End: NodeJS, EXpress, MongoDB
+# Back-End: 
+NodeJS, EXpress, MongoDB
