@@ -1,0 +1,20 @@
+<a
+    class="list-group-item"
+    [routerLink]="[index, post._id]"
+    routerLinkActive="active"
+>
+    <div class="row">
+        <div class="pull-left col-xs-4">
+            <h4 class="list-group-item-heading">
+                {{ post.name }}
+            </h4>
+        </div>
+        <div class="col-xs-8">
+            <p class="list-group-item-text">
+                {{ post.body | shorten:40 }}
+            </p>
+        </div>
+    </div>
+</a>
+
+
