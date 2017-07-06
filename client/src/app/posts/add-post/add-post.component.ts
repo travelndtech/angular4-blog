@@ -11,7 +11,6 @@ import {UsersService} from "../../users/users.service";
 
 export class AddPostComponent implements OnInit {
     addPostForm:FormGroup;
-    user:any;
     username:string;
 
     constructor(
@@ -20,8 +19,7 @@ export class AddPostComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.usersService.getUserFromServer(this.user);
-        this.username = this.usersService.user.name;
+        this.username = this.usersService.user.username;
 
         this.addPostForm = new FormGroup({
             'name':         new FormControl(null, Validators.required),
