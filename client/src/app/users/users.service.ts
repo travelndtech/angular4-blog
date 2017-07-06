@@ -65,7 +65,7 @@ export class UsersService {
         .subscribe(
             data => {
                 user = data.user;
-                return user.name;
+                return user;
             },
             err => {
                 console.log(err);
