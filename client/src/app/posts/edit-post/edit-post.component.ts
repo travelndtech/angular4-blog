@@ -30,8 +30,9 @@ export class EditPostComponent implements OnInit {
         const post = this.postsService.readPost(this.index);
 
         this.editPostForm = new FormGroup({
-            'name': new FormControl(post.name, Validators.required),
-            'body': new FormControl(post.body, Validators.required),
+            'name':         new FormControl(post.name, Validators.required),
+            'body':         new FormControl(post.body, Validators.required),
+            'author':       new FormControl(post.author, Validators.required),
             'published_at': new FormControl(post.published_at, Validators.required)
         });
     }

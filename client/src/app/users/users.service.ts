@@ -54,14 +54,24 @@ export class UsersService {
             );
     }
 
-    getUserFromServer() {
+    getUserFromServer(user) {
         let headers = new Headers();
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type','application/json');
         let options = new RequestOptions({headers:headers});
         return this.http.get('http://localhost:3000/api/users/profile', options)
-            .map((response:Response) => response.json());
+        .map((response:Response) => response.json())
+        .subscribe(
+            data => {
+                user = data.user;
+                return user.name;
+            },
+            err => {
+                console.log(err);
+                return false;
+            }
+        );
     }
 
     storeUserData(token, user) {
