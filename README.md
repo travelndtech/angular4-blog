@@ -26,4 +26,4 @@ After downloading the app, open a command promt window. access each folder
 
 To run the server, go to the "server" folder and type "nodemon"
 
-To run the client go to the "client folder and type "ng-serve"
+To run the client, go to the "client folder and type "ng-serve"
