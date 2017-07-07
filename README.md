@@ -13,7 +13,10 @@ NodeJS, EXpress, MongoDB
 
 ## Requirements
 NodeJS -> https://nodejs.org/en/
+
 MongoDB -> https://www.mongodb.com/
+
+Angular CLI -> https://cli.angular.io/
 
 ***
 
